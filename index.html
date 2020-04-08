@@ -1,0 +1,118 @@
+<body onkeypress = "pressed(event)">
+<link href = "style.css" rel = "stylesheet" type = "text/css"/>
+<!-- <script src = "preload_images.js" type = "text/javascript"></script> -->
+<script src = "settings.js" type = "text/javascript"></script>
+<script src = "script.js" type = "text/javascript"></script>
+
+
+<div class = "alert_box" id = "alert_box"></div>
+
+<div class = "item_row" style = "margin-top:5px;">
+	<div class = "item wn" onmouseover = "mo(this, 'w1')" onmouseleave = "ml(this, 'w1')" onclick = "toggle_active(this, 0)" style = "width:42px;background-image:url('images/default/w1.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '1-5')" onmouseleave = "ml(this, '1-5')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/1-5.png');"></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" onmouseover = "mo(this, 'all')" onmouseleave = "ml(this, 'all')" onclick = "toggle_active(this, 0)" style = "background-image:url('images/default/all.png');"></div>
+</div>
+
+
+<div class = "item_row">
+	<div class = "item wn" onmouseover = "mo(this, 'w2')" onmouseleave = "ml(this, 'w2')" onclick = "toggle_active(this, 0)" style = "width:42px;background-image:url('images/default/w2.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '2-2')" onmouseleave = "ml(this, '2-2')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/2-2.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '2-C')" onmouseleave = "ml(this, '2-C')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/2-C.png');"></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" onmouseover = "mo(this, 'A2')" onmouseleave = "ml(this, 'A2')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/A2.png');"></div>
+</div>
+
+
+<div class = "item_row">
+	<div class = "item wn" onmouseover = "mo(this, 'w3')" onmouseleave = "ml(this, 'w3')" onclick = "toggle_active(this, 0)" style = "width:42px;background-image:url('images/default/w3.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '3-1')" onmouseleave = "ml(this, '3-1')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/3-1.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '3-F1')" onmouseleave = "ml(this, '3-F1')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/3-F1.png');" ></div>
+	<div class = "item" onmouseover = "mo(this, '3-C')" onmouseleave = "ml(this, '3-C')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/3-C.png');" ></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" onmouseover = "mo(this, 'A3')" onmouseleave = "ml(this, 'A3')" onclick = "toggle_active(this, 1)" style = "background-image:url('images/default/A3.png');"></div>
+</div>
+
+
+<div class = "item_row">
+	<div class = "item wn" onmouseover = "mo(this, 'w4')" onmouseleave = "ml(this, 'w4')" onclick = "toggle_active(this, 0)" style = "width:42px;background-image:url('images/default/w4.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '4-F1')" onmouseleave = "ml(this, '4-F1')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/4-F1.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '4-A')" onmouseleave = "ml(this, '4-A')" onclick = "toggle_active(this, -0.5)" style = "background-image:url('images/default/4-A.png');"></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" onmouseover = "mo(this, 'A4')" onmouseleave = "ml(this, 'A4')" onclick = "increment(this, -0.5,'add')" style = "background-image:url('images/default/A4.png');"></div>
+</div>
+
+
+<div class = "item_row">
+	<div class = "item wn" onmouseover = "mo(this, 'w5')" onmouseleave = "ml(this, 'w5')" onclick = "toggle_active(this, 0)" style = "width:42px;background-image:url('images/default/w5.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '5-2')" onmouseleave = "ml(this, '5-2')" onclick = "toggle_active(this, -0.5)" style = "background-image:url('images/default/5-2.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '5-F2')" onmouseleave = "ml(this, '5-F2')" onclick = "toggle_active(this, 3)" style = "background-image:url('images/default/5-F2.png');" ></div>
+	<div class = "item" onmouseover = "mo(this, '5-A')" onmouseleave = "ml(this, '5-A')" onclick = "toggle_active(this, .5)" style = "background-image:url('images/default/5-A.png');" ></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" onmouseover = "mo(this, 'A5')" onmouseleave = "ml(this, 'A-5')" onclick = "increment(this, -0.5,'add')" style = "background-image:url('images/default/A5.png');"></div>
+</div>
+
+
+<div class = "item_row">
+	<div class = "item wn" onmouseover = "mo(this, 'w6')" onmouseleave = "ml(this, 'w6')" onclick = "toggle_active(this, 0)" style = "width:42px;background-image:url('images/default/w6.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '6-3')" onmouseleave = "ml(this, '6-3')" onclick = "toggle_active(this, 3)" style = "background-image:url('images/default/6-3.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '6-9')" onmouseleave = "ml(this, '6-9')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/6-9.png');" ></div>
+	<div class = "item" onmouseover = "mo(this, '6-F3')" onmouseleave = "ml(this, '6-F3')" onclick = "toggle_active(this, 1.5)" style = "background-image:url('images/default/6-F3.png');" ></div>
+	<div class = "item" ></div>
+	<div class = "item" ></div>
+	<div class = "item" onmouseover = "mo(this, 'A6')" onmouseleave = "ml(this, 'A6')" onclick = "toggle_active(this, -1)" style = "background-image:url('images/default/A6.png');"></div>
+</div>
+
+
+<div class = "item_row">
+	<div class = "item wn" onmouseover = "mo(this, 'w7')" onmouseleave = "ml(this, 'w7')" onclick = "toggle_active(this, 0)" style = "width:42px;background-image:url('images/default/w7.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '7-1')" onmouseleave = "ml(this, '7-1')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/7-1.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '7-6')" onmouseleave = "ml(this, '7-6')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/7-6.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '7-7')" onmouseleave = "ml(this, '7-7')" onclick = "toggle_active(this, 1)" style = "background-image:url('images/default/7-7.png');" ></div>
+	<div class = "item" onmouseover = "mo(this, '7-9')" onmouseleave = "ml(this, '7-9')" onclick = "toggle_active(this, 1.5)" style = "background-image:url('images/default/7-9.png');" ></div>
+	<div class = "item" ></div>
+	<div class = "item" onmouseover = "mo(this, 'A7')" onmouseleave = "ml(this, 'A7')" onclick = "increment(this, -0.5,'add')" style = "background-image:url('images/default/A7.png');"></div>
+</div>
+
+
+<div class = "item_row">
+	<div class = "item" onmouseover = "mo(this, 'w8')" onmouseleave = "ml(this, 'w8')" onclick = "toggle_active(this, 0)" style = "width:42px;background-image:url('images/default/w8.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '8-T1b')" onmouseleave = "ml(this, '8-T1b')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/8-T1b.png');" ></div>
+	<div class = "item" onmouseover = "mo(this, '8-T1')" onmouseleave = "ml(this, '8-T1')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/8-T1.png');"></div>
+	<div class = "item" onmouseover = "mo(this, 'BC-1')" onmouseleave = "ml(this, 'BC-1')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/BC-1.png');"></div>
+	<div class = "item" onmouseover = "mo(this, 'BC-2')" onmouseleave = "ml(this, 'BC-2')" onclick = "toggle_active(this, 0.5)" style = "background-image:url('images/default/BC-2.png');" ></div>
+	<div class = "item" onmouseover = "mo(this, 'BC-3')" onmouseleave = "ml(this, 'BC-3')" onclick = "toggle_active(this, 1)" style = "background-image:url('images/default/BC-3.png');" ></div>
+	<div class = "item" onmouseover = "mo(this, 'A8')" onmouseleave = "ml(this, 'A8')" onclick = "increment(this, 1.5,'add')" style = "background-image:url('images/default/A8.png');"></div>
+</div>
+
+
+<div class = "item_row">
+		<div class = "item" ></div>
+		<div class = "item" ></div>
+	<div class = "item" onmouseover = "mo(this, 't51')" onmouseleave = "ml(this, 't51')" onclick = "toggle_active(this, 1)" style = "width:50px;background-image:url('images/default/t51.png');"></div>
+	<div class = "item" onmouseover = "mo(this, 't52')" onmouseleave = "ml(this, 't52')" onclick = "toggle_active(this, 1)" style = "width:50px;background-image:url('images/default/t52.png');" ></div>
+	<div class = "item" onmouseover = "mo(this, 't54')" onmouseleave = "ml(this, 't54')" onclick = "toggle_active(this, 1)" style = "width:50px;background-image:url('images/default/t54.png');"></div>
+	<div class = "item" onmouseover = "mo(this, 't60')" onmouseleave = "ml(this, 't60')" onclick = "toggle_active(this, 1)" style = "width:50px;background-image:url('images/default/t60.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '1st')" onmouseleave = "ml(this, '1st')" onclick = "toggle_active(this, 2)" style = "width:50px;background-image:url('images/default/1st.png');"></div>
+	<div class = "item" onmouseover = "mo(this, '2nd')" onmouseleave = "ml(this, '2nd')" onclick = "toggle_active(this, 1)" style = "width:50px;background-image:url('images/default/2nd.png');"></div>
+</div>
+
+<div class = "item_row" style = "height:62px;"></div>
+<div class = "item_row" style = "position:fixed;bottom:0px;padding-top:10px;padding-bottom:10px;background-color:rgba(0,0,0,.85)">
+	<div class = "item" style = "width:160px; color:#FFF;font-size:25px;margin-top:6px;font-family:ps;">Score:</div>
+	<div class = "item" style = "width:155px;color:#FFF;font-size:25px;margin-top:6px;font-family:ps;" id = "score">0</div>
+
+	<!-- <div onclick = "changeplace(this)" class = "item" style = "background-image:url('images/1st.png');width:155px;margin-top:6px;text-align:right;color:#FFF;font-size:25px;font-family:ps;"></div> -->
+</div>
+
+<!-- <div id = "loading" style = "position:fixed;width:100%;height:100%;background-color:#000;color:#FFF;font-size:25px;margin-top:6px;font-family:ps;padding-top:50px">Loading...</div> -->
+<!-- <script>	load_images()</script> -->

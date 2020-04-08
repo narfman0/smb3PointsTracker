@@ -1,0 +1,15 @@
+@font-face {font-family:'ps'; src:url('fonts/ps/PressStart2P-vaV7.ttf');}
+
+body{margin:0 auto;width:642px;background-color:#000;cursor:pointer;text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;}
+
+.wn {width:42px;}
+
+.item_row{width:642px;height:42px;float:left;margin:0px;padding:0px;}
+
+.item{width:100px;float:left;height:42px;color:#FFF;background-repeat:no-repeat;font-family:ps;font-size:15px;color:#FFF;}
+
+.alert_box{width:100%;font-family:ps;font-size:15px;color:#FFF;background-color:rgba(20,20,20,.7);position:absolute;left:0;}
